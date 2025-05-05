@@ -10,13 +10,21 @@ To write a C Program to perform the basic left shift operation for 44 integer nu
 5.	Stop the program.
 
 ## PROGRAM
-
+```
+#include<stdio.h>
+int main(){
+int a=44;
+a=a<<3;
+printf("After Left Shift Operation value of a is:%d",a);
+}
+```
 ## OUTPUT
 
 
 
 
 
+![Screenshot 2025-05-05 233853](https://github.com/user-attachments/assets/30e7ad81-d9ad-4285-a063-81f663cbb7ec)
 
 
 
@@ -47,9 +55,33 @@ Write a C Program to check whether the two numbers are equal or not using simple
 5.	Stop the program.
 
 ## PROGRAM
+```
+#include<stdio.h>
+int main()
+{
+int a,b;
+scanf("%d%d",&a,&b);
+if(a==b)
+{
+printf("X is equal to Y");
+}
+
+else
+{
+printf("X is NOT equal to Y");
+}
+return 0;
+}
+```
 
 
 ## OUTPUT
+
+
+
+
+![Screenshot 2025-05-05 234010](https://github.com/user-attachments/assets/edc25fbe-6a6b-4cfc-8357-05211a7550e1)
+
            
 ## RESULT
 
@@ -70,11 +102,28 @@ Write a C Program to convert the given string into lowercase.
 5.	Stop the program.
 
 ## PROGRAM
+```
+#include<stdio.h>
+#include<ctype.h>
+int main()
+{
+char str[100];
+scanf("%s",str);
+for(int i=0;str[i] != '\0';i++)
+{
+str[i] = tolower(str[i]);
+}
+printf("Lower case String is:%s",str);
+return 0;
+}
+```
 
 ## OUTPUT
 
 
 
+
+![Screenshot 2025-05-05 234046](https://github.com/user-attachments/assets/ef5139d3-0a5e-4175-9ed9-767b3293836a)
 
 ## RESULT
 Thus the program to convert the given string into lowercase has been executed successfully
@@ -95,10 +144,27 @@ Write a C Program to count the total number of words in a given string using do 
 6.	Stop the program.
 
 ## PROGRAM
-
+```
+#include<stdio.h>
+int main()
+{
+char a[100];
+int l=0;
+fgets(a,sizeof(a),stdin);
+while(a[l]!='\0')
+{
+l++;
+}
+printf("%d",l-1);
+return 0;
+}
+```
 ## OUTPUT
 
 
+
+
+![Screenshot 2025-05-05 234122](https://github.com/user-attachments/assets/465f9c46-e9d1-43bb-a78d-f766037893ec)
 
 
 
@@ -129,9 +195,37 @@ Step 7: After the loop, check the value of flag:
 Step 8: End the program.
 
 ## PROGRAM
-
+```
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+char str[10];
+char srt[10];
+scanf("%s",str);
+scanf("%s",srt);
+int s = strcmp(str,srt);
+if(s==0)
+{
+printf("strings are same");
+}
+else
+{
+printf("strings are not same");
+}
+return 0;
+}
+```
 
 ## OUTPUT
+
+
+
+
+
+![Screenshot 2025-05-05 234218](https://github.com/user-attachments/assets/44f48cee-4209-4edd-8b6c-5b2bbc649a81)
+
+
  
 
 ## RESULT
